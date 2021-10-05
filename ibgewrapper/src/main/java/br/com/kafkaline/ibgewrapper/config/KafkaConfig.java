@@ -1,4 +1,4 @@
-package br.com.kafkaline.ibgeservice.config;
+package br.com.kafkaline.ibgewrapper.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;

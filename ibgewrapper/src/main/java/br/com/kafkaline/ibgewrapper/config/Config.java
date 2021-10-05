@@ -1,4 +1,4 @@
-package br.com.kafkaline.ibgeservice.config;
+package br.com.kafkaline.ibgewrapper.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
