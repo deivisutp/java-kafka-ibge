@@ -4,6 +4,7 @@ import br.com.kafkaline.ibgewrapper.gateway.feign.EstadoClient;
 import br.com.kafkaline.ibgewrapper.gateway.json.EstadoJson;
 import feign.Feign;
 import feign.gson.GsonDecoder;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 @Service
 public class ConsultarEstadoService {
 
+    @Cacheable(value = "estado")
     public List<EstadoJson> execute() {
         long tempoInicial = System.currentTimeMillis();
 
